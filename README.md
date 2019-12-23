@@ -88,5 +88,65 @@ public class HelloWorld {
 
 <hr>
 
+## GraphQL demo 3
+
+### 内容
+使用Spring Boot 、GraphQL 、 hibernate 来构建的一个Demo 样例。
+
+### pom依赖
+
+```xml
+ <!--GraphQL Starter-->
+        <dependency>
+            <groupId>com.graphql-java</groupId>
+            <artifactId>graphql-spring-boot-starter</artifactId>
+            <version>5.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.graphql-java</groupId>
+            <artifactId>graphiql-spring-boot-starter</artifactId>
+            <version>5.0.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!--database-->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <!--GraphQL Tools-->
+        <dependency>
+            <groupId>com.graphql-java</groupId>
+            <artifactId>graphql-java-tools</artifactId>
+            <version>5.2.4</version>
+        </dependency>
+
+        <!--lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+```
+
+## 主要架构
+Http Request -> Mutation(Insert)、Query(Select) -> Servise -> Repository -> Entity、graphqls
+
+## 测试
+http://localhost:8080/graphiql
+![1.png](image/1.jpg)
+
+<hr>
+
 ## 个人博客
 我的博客有全部的关于GraphQL 的[讲解教程](https://vgbhfive.github.io/GraphQL-%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/)，有兴趣的可以去看看。
