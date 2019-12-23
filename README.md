@@ -144,7 +144,7 @@ Http Request -> Mutation(Insert)、Query(Select) -> Servise -> Repository -> Ent
 
 ## 测试
 http://localhost:8080/graphiql
-![1.png](image/1.jpg)
+![1.png](image/1.png)
 
 <hr>
 
